@@ -1,0 +1,12 @@
+.navbarItem:hover{
+  cursor:pointer;
+  text-decoration: underline;
+  text-decoration-color: #66FF66;
+  text-underline-position: under;
+}
+
+.active{
+  text-decoration: underline;
+  text-decoration-color: #66FF66;
+  text-underline-position: under;
+}
