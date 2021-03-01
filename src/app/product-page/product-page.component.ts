@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import Swiper from 'swiper';
+import Swiper, { Autoplay } from 'swiper';
 import SwiperCore,{Navigation,Pagination,Scrollbar,A11y} from 'swiper/core';
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y,Autoplay]);
 
 
 @Component({
@@ -18,10 +18,10 @@ export class ProductPageComponent implements OnInit {
       direction: 'vertical',
       slidesPerView:1,
       autoHeight:true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+      }
     });
   }
 
