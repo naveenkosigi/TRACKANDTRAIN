@@ -1,18 +1,18 @@
 <app-navigation-bar></app-navigation-bar>
-<div class="container">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
-    </div>
+<div class="d-flex justify-content-center">
+  <div class="container">
+    <swiper
+        [slidesPerView]="1"
+        [autoHeight]="true"
+        [navigation]="true"
+      >
+        <ng-template swiperSlide>
+          <img src="https://assets.entrepreneur.com/content/3x2/2000/20190620131326-Example-of-Personal-Trainer-Business-Ideas-Bigstock-4000pxW-X-2670pxH-copy.jpeg" class="h-100" alt="First Image">
+        </ng-template>
+        <ng-template swiperSlide>Slide 2</ng-template>
+        <ng-template swiperSlide>Slide 3</ng-template>
+      </swiper>
   </div>
 </div>
+
 
